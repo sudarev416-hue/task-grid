@@ -1,5 +1,20 @@
 html,
-body,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.grid-container {
+    display: grid;
+    width: 700px;
+    height: 400px;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 200px 1fr;
+}
+.grid-container > div {
+    background-color: #daa520;
+}
 #root {
     height: 100%;
     margin: 0;
